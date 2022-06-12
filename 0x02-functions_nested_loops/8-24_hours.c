@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * jach_bauer - prints 24 hours
+ * jack_bauer - prints 24 hours
  *
- * Retutn: void
+ * Return: void
  */
 void jack_bauer(void)
 {
-	int i,j,k,l;
+	float i, j, k, l;
 
 	for (i = '0'; i <= '2'; i++)
 	{
-		for (j = '0'; j <= '3'; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
 			for (k = '0'; k <= '5'; k++)
 			{
