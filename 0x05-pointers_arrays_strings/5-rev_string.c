@@ -7,15 +7,15 @@
  */
 int _strlen(char *s)
 {
-        int count = 0;
-        int i = 0;
+	int count = 0;
+	int i = 0;
 
-        while (s[i] != '\0')
-        {
-                count = count + 1;
-                i++;
-        }
-        return (count);
+	while (s[i] != '\0')
+	{
+		count = count + 1;
+		i++;
+	}
+	return (count);
 }
 
 /**
@@ -28,10 +28,10 @@ void rev_string(char *s)
 	int len, k = 0, i;
 
 	len = _strlen(s);
-	for (i = 0; i < len/2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 		k = s[i];
 		s[i] = s[len - 1 - i];
-		s[len - i -1] = k;
+		s[len - i - 1] = k;
 	}
 }
