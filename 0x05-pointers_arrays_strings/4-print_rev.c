@@ -30,9 +30,9 @@ void print_rev(char *s)
 
 	/* calling _strlen() */
 	len = _strlen(s);
-	i = len;
+	i = len - 1;
 
-	while (s[i] >= 0)
+	while (i >= 0)
 	{
 		_putchar(s[i]);
 		i--;
