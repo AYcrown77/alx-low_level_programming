@@ -25,7 +25,7 @@ int _strlen(char *s)
  */
 char *leet(char *s)
 {
-	int i, j, len1, len2, temp;
+	int i, j, len1, len2, tmp;
 	char alp[] = {'a', 'e', 'o', 't', 'l'};
 	int num[] = {'4', '3', '0', '7', '1'};
 
@@ -40,8 +40,8 @@ char *leet(char *s)
 			{
 				continue;
 			}
-			temp = num[j];
-			s[i] = temp;
+			tmp = num[j];
+			s[i] = tmp;
 		}
 	}
 	return (s);
