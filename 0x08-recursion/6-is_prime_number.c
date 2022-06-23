@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  * check_prime - check if number is prime
@@ -24,7 +24,8 @@ int check_prime(int n, int i)
 }
 
 /**
- * is_prime_number -  function that returns 1 if the input integer is a prime number
+ * is_prime_number -  function that returns 1
+ * if the input integer is a prime number
  * otherwise return 0
  * @n: argument passed
  * Return: 0 or 1
