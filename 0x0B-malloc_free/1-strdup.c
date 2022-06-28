@@ -28,20 +28,16 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	char *ptr;
-	int len, i;
+	int i, len;
 
 	len = _strlen(str);
-	ptr = (char *) malloc(sizeof(char) * len);
+	ptr = (char *) malloc(sizeof(char) * str[len]);
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= len; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		ptr[i] = str[i];
 	}
