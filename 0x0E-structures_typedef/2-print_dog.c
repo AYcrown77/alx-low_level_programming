@@ -24,10 +24,6 @@ void print_dog(struct dog *d)
 	{
 		printf("Name: %s\n", ptr->name);
 	}
-	if (ptr->age == 0)
-	{
-		printf("Age: (0)\n");
-	}
 	else
 	{
 		printf("Age: %f\n", ptr->age);
