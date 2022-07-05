@@ -11,6 +11,10 @@ void print_dog(struct dog *d)
 	struct dog *ptr;
 
 	ptr = d;
+	if (ptr == NULL)
+	{
+		return;
+	}
 
 	if (ptr->name == NULL)
 	{
@@ -22,7 +26,7 @@ void print_dog(struct dog *d)
 	}
 	if (ptr->age == 0)
 	{
-		printf("Age: (nil)\n");
+		printf("Age: (0)\n");
 	}
 	else
 	{
