@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	do{
+	do {
 		readval = read(fdsrc, buffer, 1024);
 		if (readval == -1)
 		{
@@ -43,8 +43,8 @@ int main(int argc, char **argv)
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	}while (writeval == 1024);
-	
+	} while (writeval == 1024);
+
 	if (close(fddest))
 	{
 		dprintf(2, "Error: Can't close fd %d\n", fdsrc);
