@@ -6,13 +6,13 @@
  * @ht: the hash table you want to add or update
  * the key/value to
  * @key: the key
- * @value: he value associated with the key.
+ * @value: the value associated with the key.
+ * Return: 1 if success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *newnode, *temp;
 	unsigned long int index = 0;
-	
 
 	if (key == NULL || ht == NULL || (strcmp(key, "") == 0))
 		return (0);
